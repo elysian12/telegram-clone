@@ -5,6 +5,7 @@ import 'package:telegram_clone/common/constants/colors.dart';
 import 'package:telegram_clone/firebase_options.dart';
 import 'package:telegram_clone/modules/auth/views/splash_view.dart';
 import 'package:telegram_clone/router.dart';
+import 'package:telegram_clone/temp.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
             ),
             elevation: 0,
           )),
-      home: SplashView(),
+      home: TempScreen(),
       onGenerateRoute: onGenerateRoute,
     );
   }
